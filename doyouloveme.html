@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+  <h1>Do you love me?</h1>
+  <button onclick="yes()">Yes</button>
+  <button id="N" onmouseover="f1()" style="position: absolute">No</button>
+  <br>
+  <p id="trave">Trả về!!!</p>
+</center>
+<script>
+  function yes(){
+    document.getElementById("trave").innerHTML="YESSSSSS!!!"
+  }
+  function f1(){
+    let no=document.getElementById("N")
+    let width=window.innerWidth
+    let height=window.innerHeight
+    no.style.left=Math.round(Math.random()*width)+"px";
+    no.style.top=Math.round(Math.random()*height)+"px"
+  }
+</script>
+
+</body>
+</html>
