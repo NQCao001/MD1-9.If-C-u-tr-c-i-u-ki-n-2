@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let tuoi=+prompt("Vui lòng nhập tuôi bạn vào đây:")
+  if(Number.isInteger(tuoi)==false){
+    alert("Vui lòng nhập chính xác số tuổi của ban!!!")
+  }else {
+    if(tuoi<0){
+      alert("Bạn còn chưa ra đời!!!")
+    }
+    if(0<=tuoi && tuoi<=120){
+      alert("Bạn đúng là con người rồi!!!")
+    }
+    if(tuoi>120){
+      alert("Bạn là yêu quái chứ không còn là người!!!")
+    }
+  }
+</script>
+</body>
+</html>

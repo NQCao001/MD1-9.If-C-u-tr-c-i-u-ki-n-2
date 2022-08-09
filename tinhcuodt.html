@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let sophut=+prompt("Nhập số phút gọi:")
+  if(sophut<=50){
+    sotien=sophut*600
+    alert("Số tiền cầ thanh toán: "+sotien)
+  }
+  if(50<sophut && sophut<=200){
+    sotien=50*600+(sophut-50)*400
+    alert("Số tiền cầ thanh toán: "+sotien)
+  }
+  if(200<sophut){
+    sotien=50*600+150*400+(sophut-200)*200
+    alert("Số tiền cầ thanh toán: "+sotien)
+  }
+</script>
+</body>
+</html>
